@@ -12,7 +12,7 @@ class DPC:
 
     def padding(self):
         img_pad = np.pad(self.img, (2, 2), 'reflect')
-        return img_pad
+        return img_pad.astype(np.int32)
 
     def clipping(self):
         np.clip(self.img, 0, self.clip, out=self.img)
