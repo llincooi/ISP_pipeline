@@ -86,8 +86,8 @@ class CNF:
         avgC1 = 0
         avgC2 = 0
         is_noise = 0
-        for i in range(y - 4, y + 4, 1):
-            for j in range(x - 4, x + 4, 1):
+        for i in range(y - 4, y + 5, 1):
+            for j in range(x - 4, x + 5, 1):
                 if i % 2 == 1 and j % 2 == 0:
                     avgG = avgG + img[i,j]
                 elif i % 2 == 0 and j % 2 == 1:
@@ -122,8 +122,8 @@ class CNF:
         raw_h = self.img.shape[0]
         raw_w = self.img.shape[1]
         cnf_img = np.empty((raw_h, raw_w), np.uint16)
-        for y in range(0, img_pad.shape[0] - 8 - 1, 2):
-            for x in range(0, img_pad.shape[1] - 8 - 1, 2):
+        for y in range(0, img_pad.shape[0] - 8, 2):
+            for x in range(0, img_pad.shape[1] - 8, 2):
                 if self.bayer_pattern == 'rggb':
                     r = img_pad[y + 4, x + 4]
                     gr = img_pad[y + 4, x + 5]
