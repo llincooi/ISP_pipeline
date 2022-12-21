@@ -6,7 +6,7 @@ class CCM:
 
     def __init__(self, img, ccm):
         self.img = img
-        self.ccm = ccm
+        self.ccm = ccm/1024.
 
     def execute(self):
         img_h = self.img.shape[0]
