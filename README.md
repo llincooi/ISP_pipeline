@@ -11,6 +11,6 @@ This project aims to provide an overview of ISP and stimulate the whole ISP pipe
 
 # File Structure
 
-Crux's code and other original materials are in `_Original`. Some small problem wre fixed.
+Crux's code and other original materials are in `_Original`. Some small problem were fixed.
 
 # Usage
